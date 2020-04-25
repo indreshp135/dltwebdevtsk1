@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fourty shades of grey</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/deltalogogreen.png">
+	<link rel="stylesheet" type="text/css" href="css/cs.css">
+</head>
+<body>
+	<div id=particles-js></div>
+	<audio class="crt">
+		<source src="audio/crt.mp3" type="audio/mp3">
+	</audio>
+	<audio class="cong">
+		<source src="audio/cong.mp3" type="audio/mp3">
+	</audio>
+	<audio class="wrg">
+		<source src="audio/wrg.mp3" type="audio/mp3">
+	</audio>
+	<audio autoplay loop class="audi" >
+		<source src="audio/gameth.mp3" type="audio/mp3">
+	</audio>
+	<audio class="aud">
+		<source src="audio/Button.mp3" type="audio/mp3">
+	</audio>
+	<div class="first" >
+		<div class="imgc" ><img src="images/deltaLogoWhite.png" id="delmg"onmouseover="ply()"></div>
+		<div class="txthld"><div class="text"onmouseover="ply()"></div></div>
+		<div class="btnhld"><button onclick="oneout()" onmouseover="pl()" class="btn">Start Game</button></div>
+	</div>
+	<div class="signup">
+		<div class="con">Signup</div>
+		<input type="text" placeholder="Type name" id="nm"/>
+		<input type="password" placeholder="Type password" id="pw"/>
+		<div class="ques" onclick="login()"> Already have an account? login </div>
+		<div id="okc"><button id="oks" >Ok</button></div>
+	</div>
+	<div class="login">
+		<div class="con">Login</div>
+		<input type="text" placeholder="Type name" id="nml"/>
+		<input type="password" placeholder="Type password" id="pwl"/>
+		<div class="quesl" onclick="login()">  </div>
+		<div id="okc"><button id="okl">Ok</button></div>
+	</div>
+	<div class="second" >
+		<div id="modes"> Modes </div>
+		<div class="btnbx">
+			<button class="b1" onclick="gameinit(5,4)" onmouseover="pl()">Normal</button>
+			<button class="b1" onclick="hacker()" onmouseover="pl()">Hacker</button>
+			<button class="b1" onclick="hackerplus()" onmouseover="pl()">Hacker++</button>
+		</div>
+	</div>
+	<div class="hacker" >
+		<div id="modes"> Hacker </div>
+		<div class="btnbx">
+			<button class="b1" onclick="gameinit(4,4)" onmouseover="pl()">EASY</button>
+			<button class="b1" onclick="gameinit(6,5)"onmouseover="pl()">HARD</button>
+			<button class="b1" onclick="gameinit(8,6)"onmouseover="pl()">EXPERT</button>
+		</div>
+	</div>
+	<div class="gamen" >
+		<div class="uppart">
+			<div class="imgc"><img src="images/deltaLogoWhite.png" id="delg"></div>
+			<div id="clk"></div>
+			<div id="bstscr"></div>
+		</div>
+		<div class="game"></div>
+	</div>
+	<div class="hkp" >
+		<div class="uppart">
+			<div class="imgc"><img src="images/deltaLogoWhite.png" id="delg1"></div>
+			<div id="clk1"></div>
+			<div id="bstscr1"></div>
+		</div>
+		<div class="hckbx">
+			<center>
+				<div class="marqueel">
+				  <div>
+				  	<table border="1">
+					    <tr>
+					    	<td id="h0">11</td>
+					    	<td id="h1">21</td>
+					    	<td id="h2">31</td>
+					    	<td id="h3">41</td>
+					    	<td id="h4">51</td>
+					    </tr>
+					    <tr>
+					    	<td id="h25">11</td>
+					    	<td id="h26">21</td>
+					    	<td id="h27">31</td>
+					    	<td id="h28">41</td>
+					    	<td id="h29">51</td>
+					    </tr>
+					</table>
+				  </div>
+				</div>
+				<div class="marqueer">
+				  <div>
+				    <table border="1">
+					    <tr>
+					    	<td id="h5">1</td>
+					    	<td id="h6">2</td>
+					    	<td id="h7">3</td>
+					    	<td id="h8">4</td>
+					    	<td id="h9">5</td>
+					    </tr>
+					    <tr>
+					    	<td id="h30">1</td>
+					    	<td id="h31">3</td>
+					    	<td id="h32">4</td>
+					    	<td id="h33">5</td>
+					    	<td id="h34">5</td>
+					    </tr>
+					</table>
+				  </div>
+				</div>
+				<div class="marqueel">
+				  <div>
+				  	<table border="1">
+					    <tr>
+					    	<td id="h10">1</td>
+					    	<td id="h11">3</td>
+					    	<td id="h12">2</td>
+					    	<td id="h13">4</td>
+					    	<td id="h14">1</td>
+					    </tr>
+					    <tr>
+					    	<td id="h35">1</td>
+					    	<td id="h36">2</td>
+					    	<td id="h37">1</td>
+					    	<td id="h38">2</td>
+					    	<td id="h39">1</td>
+					    </tr>
+					</table>
+				  </div>
+				</div>
+				<div class="marqueer">
+				  <div>
+				    <table border="1">
+					    <tr>
+					    	<td id="h15">1</td>
+					    	<td id="h16">2</td>
+					    	<td id="h17">2</td>
+					    	<td id="h18">2</td>
+					    	<td id="h19">2</td>
+					    </tr>
+					    <tr>
+					    	<td id="h40">2</td>
+					    	<td id="h41">2</td>
+					    	<td id="h42">2</td>
+					    	<td id="h43">2</td>
+					    	<td id="h44">2</td>
+					    </tr>
+					</table>
+				  </div>
+				</div>
+				<div class="marqueel">
+				  <div>
+				  	<table border="1">
+					    <tr>
+					    	<td id="h20">1</td>
+					    	<td id="h21">1</td>
+					    	<td id="h22">1</td>
+					    	<td id="h23">1</td>
+					    	<td id="h24">1</td>
+					    </tr>
+					    <tr>
+					    	<td id="h45">1</td>
+					    	<td id="h46">1</td>
+					    	<td id="h47">1</td>
+					    	<td id="h48">1</td>
+					    	<td id="h49">1</td>
+					    </tr>
+					</table>
+				  </div>
+				</div>
+			</center>
+		</div>
+	</div>
+	<div class="congratulations">
+		<div class="con">Congratulations</div>
+		<input type="text" placeholder="Type name" id="inp"/>
+		<div id="score">score</div>
+		<div id="okc"><button id="ok">Ok</button></div>
+	</div>
+	<div class="leaderboard"  style="font-size: 30px">
+		<center><span>Leaderboard</span></center>
+		<div class="typeo"></div>
+		<div class="append" ></div>
+		<button id="ext" onclick="exit()" onmouseover="pl()">Exit</button>
+	</div>
+	<script src="javas/particles.js"></script>
+	<script src="javas/app.js"></script>
+	<script src="javas/main.js"></script>
+	</body>
+</html>
